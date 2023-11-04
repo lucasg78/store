@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Button } from "react-bootstrap"
 
 function Counter2() {
     // Declare a new state variable, which we'll call "count"
@@ -7,10 +8,9 @@ function Counter2() {
     return (
         <div className="container my-5" >
             <p>You clicked {count} times</p>
-            <button onClick={() => setCount(count + 1)}>
+            <Button variant="dark" size="xm" onClick={() => setCount(count + 1)}>
                 Click me
-            </button>
-            <p>Fecha y hora del último click: {new Date().toLocaleString()}</p>
+            </Button>
         </div>
     );
 }

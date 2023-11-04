@@ -4,6 +4,7 @@ import NavBar from './components/NavBar/NavBar';
 import Container from './components/Container/Container';
 import Counter from './components/Counter/Counter';
 import Counter2 from './components/Counter/Counter2';
+import Counter3 from './components/Counter/Counter3';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
       <Container/>
       <Counter/>
       <Counter2/>
+      <Counter3/>
     </div>
   );
 }
