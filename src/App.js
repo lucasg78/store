@@ -23,9 +23,9 @@ function App() {
       <NavBar />
 {/*       <ItemListContainer profesor={profesor.nombre} tutor={tutor.nombre} /> */}
       <Container/>
-      <Counter/>
+{/*       <Counter/> */}
       <Counter2/>
-      <Counter3/>
+{/*       <Counter3/> */}
     </div>
   );
 }

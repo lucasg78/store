@@ -7,10 +7,13 @@ function Counter2() {
 
     return (
         <div className="container my-5" >
-            <p>You clicked {count} times</p>
+            <h4>Counter</h4>
+            <p className="fs-1 fw-bolder">{count}</p>
             <Button variant="dark" size="xm" onClick={() => setCount(count + 1)}>
                 Click me
             </Button>
+            <br/><br/>
+            <p>Last click: {new Date().toLocaleString()}</p>
         </div>
     );
 }
