@@ -1,0 +1,32 @@
+.widget {
+    width: 40px;
+    color: white;
+    text-decoration: none;
+    font-family: "Lato", sans-serif !important;
+}
+
+.widget:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.cartIcon {
+    color: white;
+    height: 1.1em !important;
+    width: 1.1em !important;
+    padding: 1px;
+    margin-top: 10px;
+    margin-right: 0px;
+}
+
+.totalQ {
+    width: 20px;
+    height: 20px;
+    padding: 5% 12%;
+    margin-left: -3px;
+    cursor: pointer;
+    border-radius: 50%;
+    color: blue;
+    font-size: 9px;
+    background-color: white;
+}

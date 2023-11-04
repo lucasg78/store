@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import NavBar from './components/NavBar/NavBar';
+import { ItemListContainer } from './components/ItemListContainer/ItemListContainer';
+import Container from './components/Container/Container';
 
 function App() {
+
+  const profesor = {
+    nombre: "Stephan Laudern",
+    rol: "Profesor"
+  }
+
+  const tutor = {
+    nombre: "Arnaldo Cholga",
+    rol: "Tutor"
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <NavBar />
+      <Container>
+        <ItemListContainer profesor={profesor.nombre} tutor={tutor.nombre} />
+      </Container>
+
     </div>
   );
 }
